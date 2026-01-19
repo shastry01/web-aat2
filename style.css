@@ -28,38 +28,41 @@ header p {
     opacity: 0.9;
 }
 
-/* Main container */
+/* Container FIX */
 .container {
+    max-width: 1100px;          /* centers content */
+    margin: 0 auto;             /* center horizontally */
+    padding: 40px 20px;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
+    gap: 25px;
 }
 
 /* Cards */
 .card {
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #364fc7;
+    font-size: 1.3rem;
 }
 
 .card p {
     line-height: 1.6;
     font-size: 0.95rem;
+    color: #555;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* Footer */
@@ -67,6 +70,7 @@ footer {
     background-color: #212529;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     font-size: 0.9rem;
+    margin-top: 40px;
 }
